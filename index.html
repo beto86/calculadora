@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="estilo.css" type="text/css" />
+        <script src="comandos.js"></script>
+    </head>
+    <body>
+        <div class="divisao">
+            <h1> Calculadora </h1>
+            <form id="formulario">
+                <label for="cNum1">Número 01:</label>
+                <input type="text" id="cNum1" name="tNum1" placeholder="Digite 1 número" size="20" maxlength="20" onkeypress="onlyNumbers(event);" /> <br /><br />
+                <label for="cNum2">Número 02:</label>
+                <input type="text" id="cNum2" name="tNum2" placeholder="Digite 1 número" size="20" maxlength="20" onkeypress="onlyNumbers(event);" /><br /><br />
+                <input type="button" class="soma" onclick="calculo('cNum1','cNum2','+');"/>
+                <input type="button" class="subtrair" onclick="calculo('cNum1','cNum2','-');" /><br />
+                <input type="button" class="multiplicar" onclick="calculo('cNum1','cNum2','*');"/>
+                <input type="button" class="dividir" onclick="calculo('cNum1','cNum2','/');" /> <br />
+                <label id="res"></label>
+            </form>
+        </div>
+    </body>
+</html>
